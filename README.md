@@ -10,15 +10,10 @@ npx quartz plugin add github:quartz-community/favicon
 
 ## Usage
 
-```ts
-// quartz.config.ts
-import * as ExternalPlugin from "./.quartz/plugins";
-
-const config: QuartzConfig = {
-  plugins: {
-    emitters: [ExternalPlugin.Favicon()],
-  },
-};
+```yaml title="quartz.config.yaml"
+plugins:
+  - source: github:quartz-community/favicon
+    enabled: true
 ```
 
 ## Configuration
@@ -27,7 +22,7 @@ This plugin has no configuration options.
 
 ## Documentation
 
-See the [Quartz documentation](https://quartz.jzhao.xyz/) for more information.
+See the [Quartz documentation](https://quartz.jzhao.xyz/plugins/Favicon) for more information.
 
 ## License
 
