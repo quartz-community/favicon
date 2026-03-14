@@ -43,18 +43,19 @@
     "check": "npm run typecheck && npm run lint && npm run format && npm run test"
   },
   "peerDependencies": {
-    "@jackyzha0/quartz": "^4.5.2"
+    "@jackyzha0/quartz": "^4.5.2",
+    "sharp": "^0.33.0"
   },
   "peerDependenciesMeta": {
     "@jackyzha0/quartz": {
       "optional": true
+    },
+    "sharp": {
+      "optional": true
     }
   },
   "dependencies": {
-    "@quartz-community/types": "github:quartz-community/types",
-    "sharp": "^0.33.0",
-    "tsup": "^8.5.0",
-    "typescript": "^5.9.3"
+    "@quartz-community/types": "github:quartz-community/types"
   },
   "devDependencies": {
     "@types/hast": "^3.0.4",
@@ -64,7 +65,9 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.6.2",
-    "vitest": "^2.1.9"
+    "vitest": "^2.1.9",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
   },
   "quartz": {
     "name": "favicon",
