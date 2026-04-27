@@ -1,8 +1,9 @@
+import { createRequire } from 'module';
 import path from 'path';
 import fs from 'fs/promises';
 import sharp from 'sharp';
 
-// src/emitter.ts
+createRequire(import.meta.url);
 
 // node_modules/@quartz-community/types/dist/index.js
 function joinSegments(...segments) {

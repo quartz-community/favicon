@@ -1,5 +1,18 @@
 import { defineConfig } from "tsup";
 
+const EXTERNALS = [
+  "preact",
+  "preact/hooks",
+  "preact/jsx-runtime",
+  "preact/compat",
+  "@jackyzha0/quartz",
+  "@jackyzha0/quartz/*",
+  "vfile",
+  "vfile/*",
+  "unified",
+  "sharp",
+];
+
 export default defineConfig({
   entry: {
     index: "src/index.ts",
@@ -12,7 +25,11 @@ export default defineConfig({
   treeshake: true,
   target: "es2022",
   splitting: false,
-  noExternal: ["@quartz-community/types", "@quartz-community/utils"],
+  noExternal: [/^(?!sharp)/],
+  external: EXTERNALS,
   outDir: "dist",
   platform: "node",
+  banner: {
+    js: 'import { createRequire } from "module"; const require = createRequire(import.meta.url);',
+  },
 });
