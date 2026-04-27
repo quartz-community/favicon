@@ -28,4 +28,7 @@ export default defineConfig({
   external: SINGLETON_EXTERNALS,
   outDir: "dist",
   platform: "node",
+  banner: {
+    js: 'import { createRequire } from "module"; const require = createRequire(import.meta.url);',
+  },
 });
