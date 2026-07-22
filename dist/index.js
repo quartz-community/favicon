@@ -5,7 +5,7 @@ import sharp from 'sharp';
 
 createRequire(import.meta.url);
 
-// node_modules/@quartz-community/types/dist/index.js
+// ../types/dist/index.js
 function joinSegments(...segments) {
   return segments.filter((segment) => segment.length > 0).join("/").replace(/\/+/g, "/");
 }
