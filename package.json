@@ -1,6 +1,6 @@
 {
   "name": "@quartz-community/favicon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Favicon emitter plugin for Quartz.",
   "type": "module",
   "license": "MIT",
@@ -43,7 +43,7 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "sharp": "^0.33.0"
+    "sharp": ">=0.33.0"
   },
   "peerDependenciesMeta": {
     "sharp": {
@@ -61,7 +61,7 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.6.2",
-    "sharp": "^0.33.0",
+    "sharp": "^0.34.5",
     "tsup": "^8.5.0",
     "typescript": "^5.9.3",
     "vitest": "^2.1.9"
