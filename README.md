@@ -1,18 +1,20 @@
 # @quartz-community/favicon
 
-Generates a favicon.ico from the site's quartz/static/icon.png file.
+Generates a `favicon.ico` (resized to 48x48px) from the site's `quartz/static/icon.png` file.
 
 ## Installation
 
 ```bash
-npx quartz plugin add github:quartz-community/favicon
+npx quartz plugin add @quartz-community/favicon
 ```
+
+This plugin is already enabled in the default `quartz.config.yaml`.
 
 ## Usage
 
 ```yaml title="quartz.config.yaml"
 plugins:
-  - source: github:quartz-community/favicon
+  - source: "@quartz-community/favicon"
     enabled: true
 ```
 
